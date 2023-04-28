@@ -1,0 +1,140 @@
+.nav-bar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: transparent;
+  // z-index: 5;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: calc($--gap-padding / 2);
+  color: $--white;
+
+  .credits-top {
+    cursor: pointer;
+
+    .btn-text {
+      display: flex;
+      align-items: center;
+    }
+
+    .credit {
+      display: inline-block;
+      transition: $--animation-primary;
+      padding-right: 0.21em;
+    }
+
+    .credit-active {
+      transition: $--animation-primary;
+      transform: rotate(360deg);
+    }
+
+    .cbm {
+      position: relative;
+      overflow: hidden;
+      display: inline-block;
+    }
+
+    .code-by {
+      transform: translateX(0em);
+      position: relative;
+      display: inline-block;
+      transition: $--animation-primary;
+      padding-right: 0.21em;
+    }
+
+    .code-by-active {
+      transform: translateX(-3.8em);
+    }
+
+    .matthew {
+      transform: translateX(0em);
+      position: relative;
+      display: inline-block;
+      transition: $--animation-primary;
+      .mata {
+        position: absolute;
+        top: 0;
+        left: 0;
+        opacity: 1;
+        padding-left: 0.21em;
+        transition: $--animation-primary;
+        transform: translateX(4em);
+        white-space: nowrap;
+      }
+  
+      .mata-active {
+        transform: translateX(-4.0em);
+        opacity: 0;
+      }
+    }
+
+    .matthew-active {
+      transform: translateX(-3.8em);
+    }
+
+  }
+
+  .links-wrap {
+    display: flex;
+  }
+
+  .btn {
+    position: relative;
+    z-index: 5;
+    border: 0;
+    outline: 0;
+
+    a {
+      padding: calc($--gap-padding / 2);
+      display: inline-block;
+
+      &:link {
+        color: white;
+        text-decoration: none;
+      }
+
+      &:visited {
+        color: white;
+        text-decoration: none;
+      }
+
+      &:hover {
+        color: white;
+        text-decoration: none;
+      }
+
+      &:active {
+        color: white;
+        text-decoration: none;
+      }
+    }
+  }
+}
+
+@keyframes bounce {
+  0%,
+  100%,
+  20%,
+  50%,
+  80% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-20px);
+  }
+  60% {
+    transform: translateY(-10px);
+  }
+}
+
+.bounce {
+  &:hover {
+    animation-name: bounce;
+    animation-duration: 1s;
+    animation-fill-mode: both;
+    animation-timing-function: $--animation-primary;
+    animation-iteration-count: infinite;
+  }
+}

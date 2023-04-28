@@ -1,0 +1,122 @@
+.home-header {
+  background: $--grey;
+  min-height: 115vh;
+  display: flex;
+  position: relative;
+  overflow: hidden;
+
+  .personal-image {
+    position: absolute;
+    top: 10vh;
+    left: 59%;
+
+    @media (min-width: 720px) {
+      left: 50%;
+    }
+
+    img {
+      position: absolute;
+      transform: translateX(-50%);
+      width: auto;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  .container {
+    position: absolute;
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    left: 0;
+    bottom: calc(1vh * 27);
+    padding: 0 clamp(1.25em, 4vw, 2.5em);
+
+    @media (min-width: 720px) {
+      padding-left: clamp(2.5em, 8vw, 8em);
+      padding-right: clamp(2.5em, 8vw, 8em);
+      bottom: calc(1vh * 70);
+      left: unset;
+      right: 0;
+    }
+    .row {
+      max-width: 100rem;
+    }
+    .title {
+      position: absolute;
+       @media (min-width: 720px) {
+          right: 0;
+        }
+
+      .header-above-h4 {
+        top: -8vh;
+        position: absolute;
+
+        @media (min-width: 720px) {
+          top: -12.5vh;
+        }
+      }
+
+      h4 {
+        font-size: clamp(1.55em, 2.3vw, 2.5em);
+        font-weight: 450;
+        color: $--white;
+        white-space: nowrap;
+      }
+    }
+  }
+}
+
+.arrow {
+  width: clamp(1.1em, 1.3vw, 1.25em);
+  height: 100%;
+}
+
+.big-name {
+  position: absolute;
+  display: flex;
+  bottom: calc(1vh * 38);
+  left: 0;
+  width: 100%;
+  color: $--white;
+  padding-bottom: $--gap-padding;
+
+  @media (min-width: 720px) {
+    bottom: 15vh;
+  }
+
+  .name-wrap {
+    position: relative;
+    display: flex;
+
+    h1 {
+      position: relative;
+      display: flex;
+      align-items: center;
+      font-size: max(9em, 15vw);
+      white-space: nowrap;
+      pointer-events: none;
+      .spacer {
+        padding: 0 3vw;
+        font: inherit;
+      }
+    }
+  }
+}
+
+@keyframes auto-side-scroll {
+  from {
+    transform: translate(0%, 0%);
+  }
+
+  to {
+    transform: translate(-100%, 0%);
+  }
+}
+
+.auto-side-scroll {
+  animation-duration: 25s;
+  animation-timing-function: linear;
+  animation-name: auto-side-scroll;
+  animation-iteration-count: infinite;
+}
