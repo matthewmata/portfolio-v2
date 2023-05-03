@@ -4,7 +4,7 @@
   left: 0;
   width: 100%;
   background: transparent;
-  // z-index: 5;
+  z-index: 5;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -27,7 +27,9 @@
 
     .credit-active {
       transition: $--animation-primary;
-      transform: rotate(360deg);
+      @media (min-width: 720px) {
+        transform: rotate(360deg);
+      }
     }
 
     .cbm {
@@ -45,7 +47,9 @@
     }
 
     .code-by-active {
-      transform: translateX(-3.8em);
+      @media (min-width: 720px) {
+        transform: translateX(-3.8em);
+      }
     }
 
     .matthew {
@@ -63,21 +67,30 @@
         transform: translateX(4em);
         white-space: nowrap;
       }
-  
+
       .mata-active {
-        transform: translateX(-4.0em);
+        transform: translateX(-4em);
         opacity: 0;
       }
     }
 
     .matthew-active {
-      transform: translateX(-3.8em);
+      @media (min-width: 720px) {
+        transform: translateX(-3.8em);
+      }
     }
-
   }
 
   .links-wrap {
     display: flex;
+
+    .link {
+      display: none;
+
+      @media (min-width: 720px) {
+        display: block;
+      }
+    }
   }
 
   .btn {
@@ -109,6 +122,15 @@
         color: white;
         text-decoration: none;
       }
+    }
+  }
+
+  .btn-menu {
+    display: block;
+    cursor: pointer;
+    padding-right: 12px;
+    @media (min-width: 720px) {
+      display: none;
     }
   }
 }

@@ -13,36 +13,39 @@ const NavBar = () => {
         >
           <a href="#home">
             <span className="btn-text">
-
-            <span className={`credit ${creditHovered && "credit-active"}`}>
-              ©
-            </span>
-            <span className="cbm">
-              <span className={`code-by ${creditHovered && "code-by-active"}`}>
-                Code by{" "}
+              <span className={`credit ${creditHovered && "credit-active"}`}>
+                ©
               </span>
-              <span className={`matthew ${creditHovered && "matthew-active"}`}>
-                <span>Matthew </span>
-                <span className={`mata`}>Mata</span>
+              <span className="cbm">
+                <span
+                  className={`code-by ${creditHovered && "code-by-active"}`}
+                >
+                  Code by{" "}
+                </span>
+                <span
+                  className={`matthew ${creditHovered && "matthew-active"}`}
+                >
+                  <span>Matthew </span>
+                  <span className={`mata`}>Mata</span>
+                </span>
               </span>
-            </span>
             </span>
           </a>
         </span>
       </div>
       <ul className="links-wrap">
-        <li className="btn bounce">
+        <li className="btn link bounce">
           <a href="#about">About</a>
         </li>
-        <li className="btn bounce">
+        <li className="btn link bounce">
           <a href="#work">Work</a>
         </li>
-        <li className="btn bounce">
+        <li className="btn link bounce">
           <a href="#contact">Contact</a>
         </li>
-        {/* <li className="btn bounce btn-menu">
-            <div>Menu</div>
-          </li> */}
+        <li className="btn btn-menu">
+          <div>Menu</div>
+        </li>
       </ul>
     </nav>
   );
