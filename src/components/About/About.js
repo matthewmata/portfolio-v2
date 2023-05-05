@@ -13,7 +13,8 @@ const About = () => {
               <span>
                 My passionate about engineering, and the thrill of designing,
                 building, and problem-solving is what drives me to pursue {""}
-              this field with dedication and enthusiasm.</span>
+                this field with dedication and enthusiasm.
+              </span>
             </p>
             <div className="about-me">About Me</div>
           </div>
