@@ -1,3 +1,7 @@
+body {
+    background-color: $--black;
+}
+
 .home-header {
   background: $--grey;
   min-height: 115vh;
@@ -96,6 +100,7 @@
       font-size: max(9em, 15vw);
       white-space: nowrap;
       pointer-events: none;
+      font-weight: 500;
       .spacer {
         padding: 0 3vw;
         font: inherit;

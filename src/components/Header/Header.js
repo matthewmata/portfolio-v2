@@ -1,6 +1,6 @@
 import NavBar from "./NavBar";
 import Arrow from "../../SVGs/Arrow";
-import Matthew from "../../images/matthew-1.png";
+import Matthew from "../../images/matthew.png";
 
 const Header = () => {
   return (

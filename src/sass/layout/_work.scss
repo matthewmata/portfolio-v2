@@ -1,0 +1,26 @@
+.work {
+    background-color: $--white;
+    width:100%;
+    padding-top: 50px;
+    .section-title {
+        margin: 0 20px;
+        @media (min-width: 1000px) {
+            margin: 0 calc(10vw + 20px);
+        }
+
+        h4 {
+            font-weight:400;
+            // color: $--grey;
+        }
+    }
+
+    .projects {
+        @media (min-width: 620px) {
+            grid-template-columns: 1fr 1fr
+        }
+
+        @media (min-width: 1000px) {
+            padding: 0 10vw;
+        }
+    }
+}

@@ -1,0 +1,67 @@
+.project {
+  margin: 20px;
+  margin-bottom: 100px;
+
+  .tile-image {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 24px;
+    cursor: pointer;
+    img {
+      width: 100%;
+      height: auto;
+      padding: 20px;
+      border-radius: 25px;
+    }
+    &:hover {
+      img {
+        padding: 15px;
+        transition: padding 0.1s linear;
+      }
+    }
+  }
+
+  h2 {
+    font-size: 32px;
+    font-weight: 300;
+  }
+
+  .row {
+    justify-content: space-between;
+  }
+
+  h4 {
+    font-size: 16px;
+    font-weight: 400;
+    
+    a {
+      cursor: pointer;
+      text-decoration: none;
+      border-bottom: solid 1px transparent;
+      
+      &:visited {
+        color: $--black;
+      }
+      
+      &:hover {
+        border-bottom: solid 1px $--grey;
+        transition: border-bottom ease-in 0.5s;
+      }
+
+      &:active {
+        color: $--black;
+      }
+
+      svg {
+        height: 12px;
+      }
+    }
+    
+  }
+  
+
+  
+}

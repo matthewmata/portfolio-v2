@@ -4,10 +4,13 @@
 @import "./core/_typography";
 
 // import components
-// @import "./components/";
+@import "./components/_hr";
+@import "./components/_project";
 
 // import layout
 @import "./layout/_grid";
-@import "./layout/header";
-@import "./layout/navbar";
-@import "./layout/about";
+@import "./layout/_header";
+@import "./layout/_navbar";
+@import "./layout/_about";
+@import "./layout/_work";
+@import "./layout/_footer";
