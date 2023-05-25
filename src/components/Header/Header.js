@@ -4,7 +4,7 @@ import Matthew from "../../images/matthew.png";
 
 const Header = () => {
   return (
-    <header className="home-header" id="#home">
+    <header className="home-header" id="home">
       <div className="overlay personal-image">
         <img src={Matthew} alt="Matthew"></img>
       </div>

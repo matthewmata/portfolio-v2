@@ -5,7 +5,7 @@ import Arrow from "../../SVGs/Arrow";
 const Footer = () => {
 
   return (
-    <footer>
+    <footer id="contact">
       <div className="contact-info">
         <div>
           <h2>
@@ -27,15 +27,26 @@ const Footer = () => {
         </div>
         <div className="btns">
           <div className="first-btn btn">
-            <a>matthewmata151@gmail.com</a>
+            <a
+              href="mailto:matthewmata151@gmail.com"
+              target="_blank"
+              rel="noreferrer"
+            >
+              matthewmata151@gmail.com
+            </a>
           </div>
           <div className="btn">
-            <a>linkedin.com/in/matthew-mata</a>
+            <a
+              href="https://www.linkedin.com/in/matthew-mata/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              linkedin.com/in/matthew-mata
+            </a>
           </div>
         </div>
       </div>
       <div className="version-and-time">
-        {/* <hr></hr> */}
         <div className="row">
           <div>
             <h5>VERSION</h5>

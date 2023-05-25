@@ -8,8 +8,7 @@ const PROJECTS_LIST = [
   {
     name: "Cainglet Insurance",
     image: CAINGLET_INSURANCE,
-    url: "https://fb-dark-mode-clone.netlify.app",
-    github: "https://github.com/matthewmata/facebook-clone",
+    url: "https://caingletinsurance.com/",
     type: "Work",
     backgroundColor: "#570F0F",
   },
@@ -24,8 +23,8 @@ const PROJECTS_LIST = [
   {
     name: "Hidden Treasures",
     image: HIDDEN_TREASURES,
-    url: "https://fb-dark-mode-clone.netlify.app",
-    github: "https://github.com/matthewmata/facebook-clone",
+    url: "#",
+    github: "https://github.com/matthewmata/hidden-treasures",
     type: "Project",
     backgroundColor: "#183E5E",
   },

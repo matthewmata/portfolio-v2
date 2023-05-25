@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Link } from "react-scroll";
 
 const NavBar = () => {
   const [creditHovered, setCreditHovered] = useState(false);
@@ -35,13 +36,19 @@ const NavBar = () => {
       </div>
       <ul className="links-wrap">
         <li className="btn link bounce">
-          <a href="#about">About</a>
+          <Link activeClass="active" smooth spy to="about">
+            About
+          </Link>
         </li>
         <li className="btn link bounce">
-          <a href="#work">Work</a>
+          <Link activeClass="active" smooth spy to="work">
+            Work
+          </Link>
         </li>
         <li className="btn link bounce">
-          <a href="#contact">Contact</a>
+          <Link activeClass="active" smooth spy to="contact">
+            Contact
+          </Link>
         </li>
         <li className="btn btn-menu">
           <div>Menu</div>

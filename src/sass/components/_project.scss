@@ -42,6 +42,10 @@
       text-decoration: none;
       border-bottom: solid 1px transparent;
       
+      &:link {
+        color: $--black;
+      }
+
       &:visited {
         color: $--black;
       }

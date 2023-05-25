@@ -3,7 +3,7 @@ import Arrow from "../../SVGs/ArrowBlack"
 const Project = ({ name, image, url, github, backgroundColor, type }) => {
   return (
     <article className="project">
-      <a href={url}>
+      <a href={url} target="_blank" rel="noreferrer">
         <div
           className="tile-image"
           style={{ backgroundColor: backgroundColor }}
@@ -16,14 +16,14 @@ const Project = ({ name, image, url, github, backgroundColor, type }) => {
       <div className="row">
         <h4>{type}</h4>
         <h4>
-          <a href={url}>
+          <a href={url} target="_blank" rel="noreferrer">
             <span>Live Site</span>
             <span>
               <Arrow />
             </span>
           </a>
           {github && (
-            <a href={github}>
+            <a href={github} target="_blank" rel="noreferrer">
               <span>Github</span>
               <span>
                 <Arrow />

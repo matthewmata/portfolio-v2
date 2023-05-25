@@ -59,7 +59,7 @@ footer {
     width: clamp(0.9rem, 1.1vw, 1.1rem);
   }
   .cta-container {
-    margin-bottom: max(2.5em, 12vh);
+    margin-bottom: max(2.5em, 16vh);
   }
 
   hr {
@@ -134,6 +134,17 @@ footer {
 
   a {
     z-index: 10;
+    text-decoration: none;
+    &:link {
+      color: $--white;
+    }
+
+    &:active {
+      color: $--white;
+    }
+    &:visited {
+      color: $--white;
+    }
   }
   
   .version-and-time {

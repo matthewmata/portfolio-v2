@@ -4,7 +4,7 @@ import PROJECT_LIST from "./projects-list";
 
 const Work = () => {
   return (
-    <section className="work">
+    <section className="work" id="work">
       <div className="section-title">
         <h4>Recent Work</h4>
         <hr></hr>
