@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Link } from "react-scroll";
 
-const NavBar = () => {
+const NavBar = ({ toggleSideNavBar }) => {
   const [creditHovered, setCreditHovered] = useState(false);
 
   return (
@@ -50,7 +50,7 @@ const NavBar = () => {
             Contact
           </Link>
         </li>
-        <li className="btn btn-menu">
+        <li className="btn btn-menu" onClick={() => toggleSideNavBar()}>
           <div>Menu</div>
         </li>
       </ul>
