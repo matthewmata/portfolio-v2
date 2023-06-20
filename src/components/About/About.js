@@ -11,7 +11,7 @@ const About = () => {
           <div className="text-wrap">
             <p>
               <span>
-                My passionate about engineering, and the thrill of designing,
+                My passion for engineering, and the thrill of designing,
                 building, and problem-solving is what drives me to pursue {""}
                 this field with dedication and enthusiasm.
               </span>
