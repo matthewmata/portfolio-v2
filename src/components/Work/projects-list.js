@@ -23,7 +23,7 @@ const PROJECTS_LIST = [
   {
     name: "Hidden Treasures",
     image: HIDDEN_TREASURES,
-    url: "#",
+    // url: "#",
     github: "https://github.com/matthewmata/hidden-treasures",
     type: "Project",
     backgroundColor: "#183E5E",
