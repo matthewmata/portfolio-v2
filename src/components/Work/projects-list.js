@@ -15,7 +15,7 @@ const PROJECTS_LIST = [
   {
     name: "Facebook Clone",
     image: FACEBOOK_CLONE,
-    url: "https://fb-dark-mode-clone.netlify.app",
+    url: "https://fb-darkmode.netlify.app/",
     github: "https://github.com/matthewmata/facebook-clone",
     type: "Project",
     backgroundColor: "#363638",
