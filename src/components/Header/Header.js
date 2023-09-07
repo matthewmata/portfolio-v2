@@ -4,7 +4,7 @@ import { Link } from "react-scroll";
 import NavBar from "./NavBar";
 import Arrow from "../../SVGs/Arrow";
 import Hamburger from "../../SVGs/Hamburger";
-import Matthew from "../../images/matthew.png";
+// import Matthew from "../../images/matthew.png";
 
 const Header = ({ toggleSideNavBar, hamburgerActive }) => {
   const [isVisible, setIsVisible] = useState(false);
@@ -31,7 +31,10 @@ const Header = ({ toggleSideNavBar, hamburgerActive }) => {
       <Link activeClass="active" smooth spy to="home-header">
         <header className="home-header" id="home">
           <div className="overlay personal-image">
-            <img src={Matthew} alt="Matthew"></img>
+            <img
+              src="https://matthew-mata-portfolio.s3.amazonaws.com/matthew.png"
+              alt="Matthew"
+            ></img>
           </div>
           <NavBar toggleSideNavBar={toggleSideNavBar} />
           <div className="container">
